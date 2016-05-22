@@ -1,0 +1,13 @@
+main: io.nicholaskhrangtong.ServerBot.Main
+author: Asiatic
+version: 1.0.0
+name: ServerBot
+
+commands:
+   bye:
+      decription: Use </bye> to send farewell message to everyone!
+
+permissions:
+   serverbot.bye:
+      description: Allows user to send a faremessage using </bye>.
+      default: op
