@@ -28,4 +28,4 @@ Provided below is a list of all the features that this plugin implements;
 
 ####<a name="current-implementations">Current implementations (as of May 22nd, 2016)</a>
 - Setting up the plugin in IntelliJ and getting the plugin structure established.
-- Creating 
+- Creating
