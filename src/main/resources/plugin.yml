@@ -6,8 +6,13 @@ name: ServerBot
 commands:
    bye:
       decription: Use </bye> to send farewell message to everyone!
+   roll:
+      description: Usage /roll <upper_bound>
 
 permissions:
    serverbot.bye:
       description: Allows user to send a faremessage using </bye>.
+      default: op
+   server.roll:
+      description: Allows user to roll for a number.
       default: op
