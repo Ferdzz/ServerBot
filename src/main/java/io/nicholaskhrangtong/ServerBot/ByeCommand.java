@@ -16,12 +16,11 @@ public class ByeCommand implements CommandExecutor
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        if (p.hasPermission("serverbot.bye"))
+        if (sender.hasPermission("serverbot.bye"))
         {
             sender.sendMessage(this.byeLink);    
             return true;
         }
-        
         return false;
     }
 }
