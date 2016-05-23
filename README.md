@@ -9,7 +9,7 @@ me to work on to get my skills back in check, or at a working level once again.
 1. [Plugin Details and Functions](#plugin-details)
 2. [Plugin Commands](#plugin-commands)
 3. [Plugin Permissions](#plugin-permissions)
-4. [Changelog](#current-implementations)
+4. [Changelog](#changelog)
 5. [Credits](#credits)
 <hr>
   
@@ -24,6 +24,8 @@ Provided below is a list of all the features that this plugin implements;
 - Roll: Allows players to roll for a random number within the bounds in which they define with a paramter thats required in the command.
 - Cat: Sends the player a link to a random cat picture!
 - Bye: Sends a farewell to the player displaying a link to a farewell picture!
+
+[Back to table of contents](#top)
 <hr>
 
 ####<a name="plugin-commands">Plugin Commands</a>
@@ -36,6 +38,7 @@ Provided below is a list of all the features that this plugin implements;
 |Cat*             |/cat                 |User gets sent a link to a random cat picture.|
 |Bye              |/bye                 |User gets sent a link to a farewell picture.|
 "*" _to be implemented_
+
 [Back to table of contents](#top)
 <hr>
 
