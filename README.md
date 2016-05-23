@@ -36,6 +36,7 @@ Provided below is a list of all the features that this plugin implements;
 |Cat*             |/cat                 |User gets sent a link to a random cat picture.|
 |Bye              |/bye                 |User gets sent a link to a farewell picture.|
 "*" _to be implemented_
+[Back to table of contents](#top)
 <hr>
 
 ####<a name="plugin-permissions">Plugin Permissions</a>
@@ -51,8 +52,8 @@ Provided below is a list of all the features that this plugin implements;
 <hr>
 
 ####<a name="changelog">Changelog (Latest Update: 05.22.2016)</a>
-[05.22.2016] - Set up the plugin in IntelliJ and got the plugin structure established. 
-[05.22.2016] - Implemented the eightball, coin, roll, and bye features. 
+-[05.22.2016] - Set up the plugin in IntelliJ and got the plugin structure established. 
+-[05.22.2016] - Implemented the eightball, coin, roll, and bye features. 
 <hr>
 
 ####<a name="credits">Credits</a>
