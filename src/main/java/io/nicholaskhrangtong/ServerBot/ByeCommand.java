@@ -5,23 +5,23 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class ByeCommand implements CommandExecutor {
-
-    private String byeLink = "http://cdn.photonesta.com/images/avvesione.files.wordpress.com/2013/04/to_aru_kagaku_no_railgun_s-02-misaka-happy-waving_goodbye-heroine-protagonist-cute.jpg";
-
-    private String getByeLink()
+public class ByeCommand implements CommandExecutor
+{
+    private final String byeLink;
+    
+    public ByeCommand()
     {
-        return byeLink;
+        this.byeLink = "http://cdn.photonesta.com/images/avvesione.files.wordpress.com/2013/04/to_aru_kagaku_no_railgun_s-02-misaka-happy-waving_goodbye-heroine-protagonist-cute.jpg";
     }
 
-    public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-        Player p = (Player) sender;
         if (p.hasPermission("serverbot.bye"))
         {
-            p.sendMessage(getByeLink());
+            sender.sendMessage(this.byeLink);    
             return true;
         }
+        
         return false;
     }
 }
