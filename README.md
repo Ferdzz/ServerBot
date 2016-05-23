@@ -1,8 +1,5 @@
 ## ServerBot - A fun Spigot/Bukkit plugin for Minecraft Servers (README still in progress)
-ServerBot is a fun little Spigot/Bukkit plugin that is meant to add life to a Minecraft server without taking too much of a toll
-on the overall concept of the Vanilla game. The plugin also serves as my reintroduction into both Java development and Spigot plugin
-development. The goal here was to create something that was fun and usable but also something that is remotely challenging for
-me to work on to get my skills back in check, or at a working level once again.
+ServerBot is a fun little Spigot/Bukkit plugin that is meant to add life to a Minecraft server without taking too much of a toll on the overall concept of the Vanilla game. The plugin also serves as my reintroduction into both Java development and Spigot plugin development. The goal here was to create something that was fun and usable but also something that is remotely challenging for me to work on to get my skills back in check, or at a working level once again.
 
 <hr>
 ###<a name="top">Table of Contents</a>
@@ -14,7 +11,7 @@ me to work on to get my skills back in check, or at a working level once again.
 <hr>
   
 ####<a name="plugin-details">Plugin Details and Functions</a>
-ServerBot has a multitude of fun little functions, mostly games that text-based that allow players on the server to interact
+ServerBot has a multitude of fun little features, mostly games that are text-based that allow players on the server to interact
 with one another. In addition, the plugin also provides some moderation capabilities, allowing the server managers to kick,
 ban, mute, unban, and unmute players. _Please note that not all of these methods have been implemented as of [05.22.2016]
 Provided below is a list of all the features that this plugin implements;
