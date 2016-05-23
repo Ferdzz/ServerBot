@@ -10,6 +10,8 @@ commands:
       description: Usage /roll <upper_bound> to get random number from 0 to your desired number.
    eightball:
       description: Usage /eightball <question> to get an answer from Magic 8ball.
+   coin:
+      description: Usage /coin to let chance decide your fate.
 
 permissions:
    serverbot.bye:
@@ -21,3 +23,5 @@ permissions:
    server.eightball:
       description: Allows user to access the wisdom from the eightball.
       default: op
+   server.coin:
+      description: Allows user to take a chance in life by letting a coin dictate the outcome.
