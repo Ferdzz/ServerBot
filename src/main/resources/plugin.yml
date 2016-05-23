@@ -5,9 +5,11 @@ name: ServerBot
 
 commands:
    bye:
-      decription: Use </bye> to send farewell message to everyone!
+      decription: Usage /bye to get a link to a farewell picture.
    roll:
-      description: Usage /roll <upper_bound>
+      description: Usage /roll <upper_bound> to get random number from 0 to your desired number.
+   eightball:
+      description: Usage /eightball <question> to get an answer from Magic 8ball.
 
 permissions:
    serverbot.bye:
@@ -15,4 +17,7 @@ permissions:
       default: op
    server.roll:
       description: Allows user to roll for a number.
+      default: op
+   server.eightball:
+      description: Allows user to access the wisdom from the eightball.
       default: op

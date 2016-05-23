@@ -16,6 +16,7 @@ public class Main extends JavaPlugin implements Listener
 
         getCommand("bye").setExecutor(new ByeCommand());
         getCommand("roll").setExecutor(new RollCommand());
+        getCommand("eightball").setExecutor(new EightballCommand());
     }
 
     @Override
