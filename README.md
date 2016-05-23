@@ -16,7 +16,7 @@ me to work on to get my skills back in check, or at a working level once again.
 ####<a name="plugin-details">Plugin Details and Functions</a>
 ServerBot has a multitude of fun little functions, mostly games that text-based that allow players on the server to interact
 with one another. In addition, the plugin also provides some moderation capabilities, allowing the server managers to kick,
-ban, mute, unban, and unmute players. _Please note that not all of these methods have been implemented as of [05.22.2016] - [see Changelog](#changelog)_
+ban, mute, unban, and unmute players. _Please note that not all of these methods have been implemented as of [05.22.2016]
 Provided below is a list of all the features that this plugin implements;
 - Eightball: Players can ask a question and expect a response much like that of a real eightball.
 - Spin the bottle: Players can spin the bottle, it randomly chooses two people that are online in the server.
@@ -24,7 +24,6 @@ Provided below is a list of all the features that this plugin implements;
 - Roll: Allows players to roll for a random number within the bounds in which they define with a paramter thats required in the command.
 - Cat: Sends the player a link to a random cat picture!
 - Bye: Sends a farewell to the player displaying a link to a farewell picture!
-<p align="center">[Back to table of contents](#top)</p>
 <hr>
 
 ####<a name="plugin-commands">Plugin Commands</a>
@@ -37,7 +36,6 @@ Provided below is a list of all the features that this plugin implements;
 |Cat*             |/cat                 |User gets sent a link to a random cat picture.|
 |Bye              |/bye                 |User gets sent a link to a farewell picture.|
 "*" _to be implemented_
-<p align="center">[Back to table of contents](#top)</p>
 <hr>
 
 ####<a name="plugin-permissions">Plugin Permissions</a>
@@ -50,13 +48,11 @@ Provided below is a list of all the features that this plugin implements;
 |Cat*             |serverbot.cat        |
 |Bye              |serverbot.bye        |
 "*" _to be implemented_
-<p align="center">[Back to table of contents](#top)</p>
 <hr>
 
 ####<a name="changelog">Changelog (Latest Update: 05.22.2016)</a>
 [05.22.2016] - Set up the plugin in IntelliJ and got the plugin structure established. 
 [05.22.2016] - Implemented the eightball, coin, roll, and bye features. 
-<p align="center">[Back to table of contents](#top)</p>
 <hr>
 
 ####<a name="credits">Credits</a>
