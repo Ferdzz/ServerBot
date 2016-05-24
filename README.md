@@ -13,9 +13,7 @@ ServerBot is a fun little Spigot/Bukkit plugin that is meant to add life to a Mi
   
 ####<a name="plugin-details">Plugin Details and Functions</a>
 ServerBot has a multitude of fun little features, mostly games that are text-based that allow players on the server to interact
-with one another. In addition, the plugin also provides some moderation capabilities, allowing the server managers to kick,
-ban, mute, unban, and unmute players. _Please note that not all of these methods have been implemented as of [05.22.2016]
-Provided below is a list of all the features that this plugin implements;
+with one another. 
 - Eightball: Players can ask a question and expect a response much like that of a real eightball.
 - Spin the bottle: Players can spin the bottle, it randomly chooses two people that are online in the server.
 - Coin toss: Gives players the ability to let a virtual coin make their decisions
@@ -33,7 +31,6 @@ Provided below is a list of all the features that this plugin implements;
 |Spin the bottle  |/spinthebottle       |User spins the bottle, the plugin will randomly choose two people on the server.|
 |Coin toss        |/coin                |User tosses a coin and lets chance dictate their choices.|
 |Roll             |/roll <upper-bound>  |User rolls for a random number between 0 and the desired upper-bound number.|
-|Cat*             |/cat                 |User gets sent a link to a random cat picture.|
 |Bye              |/bye                 |User gets sent a link to a farewell picture.|
 "*" _to be implemented_
 
@@ -47,7 +44,6 @@ Provided below is a list of all the features that this plugin implements;
 |Spin the bottle  |serverbot.bottle     |
 |Coin toss        |serverbot.coin       |
 |Roll             |serverbot.roll       |
-|Cat*             |serverbot.cat        |
 |Bye              |serverbot.bye        |
 "*" _to be implemented_
 <hr>
