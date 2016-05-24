@@ -18,7 +18,6 @@ with one another.
 - Spin the bottle: Players can spin the bottle, it randomly chooses two people that are online in the server.
 - Coin toss: Gives players the ability to let a virtual coin make their decisions
 - Roll: Allows players to roll for a random number within the bounds in which they define with a paramter thats required in the command.
-- Cat: Sends the player a link to a random cat picture!
 - Bye: Sends a farewell to the player displaying a link to a farewell picture!
 
 [Back to table of contents](#top)
@@ -48,7 +47,7 @@ with one another.
 "*" _to be implemented_
 <hr>
 
-####<a name="changelog">Changelog (Latest Update: 05.22.2016)</a>
+####<a name="changelog">Changelog (Latest Update: 05.23.2016)</a>
 - **05.22.2016:** Set up the plugin in IntelliJ and got the plugin structure established. 
 - **05.22.2016:** Implemented the eightball, coin, roll, and bye features.
 - **05.23.2016:** Implemeneted the spin command.
