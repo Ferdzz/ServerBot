@@ -18,7 +18,9 @@ with one another.
 - Spin the bottle: Players can spin the bottle, it randomly chooses two people that are online in the server.
 - Coin toss: Gives players the ability to let a virtual coin make their decisions
 - Roll: Allows players to roll for a random number within the bounds in which they define with a paramter thats required in the command.
+- Snip: Allows user to edit a certain word in someone's sentence, which is then output by the bot.
 - Bye: Sends a farewell to the player displaying a link to a farewell picture!
+- Chat logging: Allows server managers to define a list of words that causes the user's name and that sentence to be logged into an plain text file. (Useful for catching somone swearing or being insensitive to certain groups of people).
 
 [Back to table of contents](#top)
 <hr>
@@ -30,6 +32,7 @@ with one another.
 |Spin the bottle  |/spinthebottle       |User spins the bottle, the plugin will randomly choose two people on the server.|
 |Coin toss        |/coin                |User tosses a coin and lets chance dictate their choices.|
 |Roll             |/roll <upper-bound>  |User rolls for a random number between 0 and the desired upper-bound number.|
+|Snip             |/snip <to-replace> <replace-with>  |User edits a certain word in someone's sentence, which is then output by the bot.|
 |Bye              |/bye                 |User gets sent a link to a farewell picture.|
 "*" _to be implemented_
 
@@ -43,6 +46,7 @@ with one another.
 |Spin the bottle  |serverbot.bottle     |
 |Coin toss        |serverbot.coin       |
 |Roll             |serverbot.roll       |
+|Snip             |serverbot.snip       |
 |Bye              |serverbot.bye        |
 "*" _to be implemented_
 <hr>
@@ -57,6 +61,8 @@ with one another.
 ####<a name="known-issues">Known Issues / Task List</a>
 - [x] Fix incorrect range on /roll due to faulty coding.
 - [x] Fix error that will be thrown if an integer is not entered with /roll.
+- [ ] Implement snip command.
+- [ ] Implement chat logging.
 - [ ] Add a customizable config.yml so server managers may define some parts of the bot output
 
 ####<a name="credits">Credits</a>
