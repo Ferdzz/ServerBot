@@ -1,9 +1,5 @@
 package io.nicholaskhrangtong.ServerBot;
 
-import org.bukkit.ChatColor;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +14,7 @@ public class Main extends JavaPlugin implements Listener
         getCommand("roll").setExecutor(new RollCommand());
         getCommand("eightball").setExecutor(new EightballCommand());
         getCommand("coin").setExecutor(new CoinCommand());
+        getCommand("spin").setExecutor(new BottleCommand());
     }
 
     @Override

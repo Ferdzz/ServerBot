@@ -12,6 +12,8 @@ commands:
       description: Usage /eightball <question> to get an answer from Magic 8ball.
    coin:
       description: Usage /coin to let chance decide your fate.
+   spin:
+      description: Usage /spin to see who the bottle lands on.
 
 permissions:
    serverbot.bye:
@@ -25,3 +27,5 @@ permissions:
       default: op
    server.coin:
       description: Allows user to take a chance in life by letting a coin dictate the outcome.
+   server.bottle:
+      description: Allows user to spin the bottle.
