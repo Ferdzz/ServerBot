@@ -61,7 +61,7 @@ with one another.
 ####<a name="known-issues">Known Issues / Task List</a>
 - [x] Fix incorrect range on /roll due to faulty coding.
 - [x] Fix error that will be thrown if an integer is not entered with /roll.
-- [ ] Implement snip command.
+- [x] Implement snip command.
 - [ ] Implement chat logging.
 - [ ] Add a customizable config.yml so server managers may define some parts of the bot output
 
