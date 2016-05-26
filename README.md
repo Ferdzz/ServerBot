@@ -54,7 +54,7 @@ with one another.
 ####<a name="changelog">Changelog (Latest Update: 05.23.2016)</a>
 - **05.22.2016:** Set up the plugin in IntelliJ and got the plugin structure established. 
 - **05.22.2016:** Implemented the eightball, coin, roll, and bye features.
-- **05.23.2016:** Implemeneted the spin command.
+- **05.23.2016:** Implemented the spin command.
 - **05.23.2016:** Fixed the /roll command's faulty range and handled the number format error.
 <hr>
 
