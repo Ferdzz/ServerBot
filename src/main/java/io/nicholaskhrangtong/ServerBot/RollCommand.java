@@ -57,7 +57,7 @@ public class RollCommand implements CommandExecutor
                     desiredUpperBound = Integer.parseInt(args[0]);
                     generatedNumber = random.nextInt(desiredUpperBound) + 1;
                     Bukkit.broadcastMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + " "
-                            + sender.getName() + " rolled " + generatedNumber + " out of " + desiredUpperBound);
+                            + ChatColor.WHITE + sender.getName() + " rolled " + generatedNumber + " out of " + desiredUpperBound);
                     return true;
                 }
                 catch (NumberFormatException e)
