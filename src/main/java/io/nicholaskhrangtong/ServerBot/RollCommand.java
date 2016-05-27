@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.Plugin;
 
 import java.util.Random;
 
@@ -13,6 +14,15 @@ public class RollCommand implements CommandExecutor
     private Random random = new Random();
     private int desiredUpperBound;
     private int generatedNumber;
+
+    private final Plugin plugin;
+    private final ColorCodesHandler colorCodesHandler;
+
+    public RollCommand(Plugin plugin)
+    {
+        this.plugin = plugin;
+        this.colorCodesHandler = new ColorCodesHandler();
+    }
 
     public boolean isInteger(String s)
     {
@@ -46,7 +56,8 @@ public class RollCommand implements CommandExecutor
                 {
                     desiredUpperBound = Integer.parseInt(args[0]);
                     generatedNumber = random.nextInt(desiredUpperBound) + 1;
-                    Bukkit.broadcastMessage(sender.getName() + " rolled " + generatedNumber + " out of " + desiredUpperBound);
+                    Bukkit.broadcastMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + " "
+                            + sender.getName() + " rolled " + generatedNumber + " out of " + desiredUpperBound);
                     return true;
                 }
                 catch (NumberFormatException e)
