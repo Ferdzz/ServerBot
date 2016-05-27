@@ -8,23 +8,26 @@ public class Main extends JavaPlugin implements Listener
 {
 
     private final ChatListener chatListener;
+    private final DataFileHandler dataFileHandler;
 
     public Main ()
     {
         this.chatListener = new ChatListener();
+        this.dataFileHandler = DataFileHandler.getInstance();
     }
 
     @Override
     public void onEnable()
     {
+        dataFileHandler.setup(this);
         getLogger().info("ServerBot has been activated!");
 
-        getCommand("bye").setExecutor(new ByeCommand());
-        getCommand("roll").setExecutor(new RollCommand());
+        getCommand("bye").setExecutor(new ByeCommand(this));
+        getCommand("roll").setExecutor(new RollCommand(this));
         getCommand("eightball").setExecutor(new EightballCommand());
-        getCommand("coin").setExecutor(new CoinCommand());
-        getCommand("spin").setExecutor(new BottleCommand());
-        getCommand("snip").setExecutor(new SnipCommand(chatListener));
+        getCommand("coin").setExecutor(new CoinCommand(this));
+        getCommand("spin").setExecutor(new BottleCommand(this));
+        getCommand("snip").setExecutor(new SnipCommand(chatListener, this));
 
         Bukkit.getServer().getPluginManager().registerEvents(chatListener, this);
     }
@@ -32,6 +35,7 @@ public class Main extends JavaPlugin implements Listener
     @Override
     public void onDisable()
     {
+        dataFileHandler.saveConfig();
         getLogger().info("ServerBot has been deactivated!");
     }
 }
