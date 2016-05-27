@@ -1,6 +1,7 @@
 package io.nicholaskhrangtong.ServerBot;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,7 +24,8 @@ public class ByeCommand implements CommandExecutor
     {
         if (sender.hasPermission("serverbot.bye"))
         {
-            sender.sendMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + " " + this.byeLink);
+            sender.sendMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) +
+                    ChatColor.WHITE + " " + this.byeLink);
             return true;
         }
         return false;
