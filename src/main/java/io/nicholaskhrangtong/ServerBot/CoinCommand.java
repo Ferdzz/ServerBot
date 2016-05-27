@@ -43,7 +43,7 @@ public class CoinCommand implements CommandExecutor
         if (sender.hasPermission("serverbot.coin"))
         {
             Bukkit.broadcastMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + " "
-                    + sender.getName() + " flipped a coin!" + ChatColor.GREEN + "The coin landed on " + ChatColor.WHITE + CoinToss());
+                    + ChatColor.GREEN + sender.getName() + " flipped a coin!" + "The coin landed on " + ChatColor.WHITE + CoinToss());
             return true;
         }
         return false;
