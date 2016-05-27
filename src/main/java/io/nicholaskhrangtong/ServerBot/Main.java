@@ -10,6 +10,7 @@ public class Main extends JavaPlugin implements Listener
     private final ChatListener chatListener;
     private final DataFileHandler dataFileHandler;
 
+
     public Main ()
     {
         this.chatListener = new ChatListener();
@@ -20,7 +21,6 @@ public class Main extends JavaPlugin implements Listener
     public void onEnable()
     {
         dataFileHandler.setup(this);
-        getLogger().info("ServerBot has been activated!");
 
         getCommand("bye").setExecutor(new ByeCommand(this));
         getCommand("roll").setExecutor(new RollCommand(this));
@@ -36,6 +36,5 @@ public class Main extends JavaPlugin implements Listener
     public void onDisable()
     {
         dataFileHandler.saveConfig();
-        getLogger().info("ServerBot has been deactivated!");
     }
 }
