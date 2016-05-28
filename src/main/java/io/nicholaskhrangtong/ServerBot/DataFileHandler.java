@@ -11,39 +11,32 @@ import java.io.IOException;
 public class DataFileHandler
 {
     private DataFileHandler()	{}
-    static DataFileHandler instance = new DataFileHandler();
+    static DataFileHandler dataFileHandler = new DataFileHandler();
 
     public static DataFileHandler getInstance()
     {
-        return instance;
+        return dataFileHandler;
     }
 
     Plugin plugin;
-    FileConfiguration config;
     File configFile;
 
     public void setup(Plugin plugin)
     {
-        config = plugin.getConfig();
-        config.options().copyDefaults(true);
-        configFile = new File(plugin.getDataFolder(), "config.yml");
-        saveConfig();
-    }
+        try {
+            if (!plugin.getDataFolder().exists()) {
+                plugin.getDataFolder().mkdirs();
+            }
+            File configFile = new File(plugin.getDataFolder(), "config.yml");
+            if (!configFile.exists()) {
+                plugin.getLogger().info("Config.yml not found, creating!");
+                plugin.saveDefaultConfig();
+            } else {
+                plugin.getLogger().info("Config.yml found, loading!");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
 
-    public FileConfiguration getConfig()
-    {
-        return config;
-    }
-
-    public void saveConfig()
-    {
-        try
-        {
-            config.save(configFile);
-        }
-        catch (IOException e)
-        {
-            Bukkit.getServer().getLogger().severe(ChatColor.RED + "Unable to save config.yml!");
         }
     }
 }

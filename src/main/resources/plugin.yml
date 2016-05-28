@@ -4,7 +4,7 @@ version: 1.0.0
 name: ServerBot
 
 commands:
-   bye:
+  bye:
       decription: Usage /bye to get a link to a farewell picture.
    roll:
       description: Usage /roll <upper_bound> to get random number from 0 to your desired number.
@@ -15,7 +15,7 @@ commands:
    spin:
       description: Usage /spin to see who the bottle lands on.
    snip:
-      description: Snip
+      description: Usage /snip <toReplace> <replaceWith>.
 
 permissions:
    serverbot.bye:
@@ -32,4 +32,4 @@ permissions:
    server.bottle:
       description: Allows user to spin the bottle.
    server.snip:
-      description: Snip
+      description: Allows uer to edit chat messages.
