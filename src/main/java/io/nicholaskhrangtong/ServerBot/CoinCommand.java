@@ -11,12 +11,14 @@ import java.util.Random;
 
 public class CoinCommand implements CommandExecutor
 {
-
-    private final Random random = new Random();
-    private final String headsUp = "heads";
-    private final String tailsUp = "tails";
     private final Plugin plugin;
     private final ColorCodesHandler colorCodesHandler;
+
+    private final String headsUp = "heads";
+    private final String tailsUp = "tails";
+
+    private final Random random = new Random();
+    private int sideIndicator;
 
     public CoinCommand(Plugin plugin)
     {
@@ -26,7 +28,7 @@ public class CoinCommand implements CommandExecutor
 
     public String CoinToss()
     {
-        int sideIndicator = random.nextInt(2);
+        this.sideIndicator = random.nextInt(2);
         if (sideIndicator == 0)
         {
             return headsUp;
@@ -39,7 +41,6 @@ public class CoinCommand implements CommandExecutor
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-
         if (sender.hasPermission("serverbot.coin"))
         {
             Bukkit.broadcastMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + " "
