@@ -10,7 +10,10 @@ import java.util.Random;
 
 public class EightballCommand implements CommandExecutor
 {
+    private final Random random = new Random();
+    private int index;
 
+    private String answer;
     private final String[] eightballAnswers = {
             "Signs point to yes.",
             "Yes.",
@@ -34,13 +37,9 @@ public class EightballCommand implements CommandExecutor
             "Don't count on it."
     };
 
-    private final Random random = new Random();
-    private String answer;
-    private String question;
-
     public String getAnswer()
     {
-        int index = random.nextInt(eightballAnswers.length);
+        this.index = random.nextInt(eightballAnswers.length);
         answer = eightballAnswers[index];
 
         return answer;
@@ -53,7 +52,6 @@ public class EightballCommand implements CommandExecutor
             sender.sendMessage(ChatColor.GOLD + "[Eightball] " + ChatColor.GRAY + "answered: " + ChatColor.WHITE + getAnswer());
             return true;
         }
-
         return false;
     }
 }
