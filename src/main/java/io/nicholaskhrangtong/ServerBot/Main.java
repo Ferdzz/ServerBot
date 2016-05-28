@@ -6,10 +6,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener
 {
-
     private final ChatListener chatListener;
     private final DataFileHandler dataFileHandler;
-
 
     public Main ()
     {
@@ -35,6 +33,6 @@ public class Main extends JavaPlugin implements Listener
     @Override
     public void onDisable()
     {
-        dataFileHandler.saveConfig();
+        saveConfig();
     }
 }
