@@ -11,34 +11,17 @@ import java.util.Random;
 
 public class RollCommand implements CommandExecutor
 {
+    private final Plugin plugin;
+    private final ColorCodesHandler colorCodesHandler;
+
     private Random random = new Random();
     private int desiredUpperBound;
     private int generatedNumber;
-
-    private final Plugin plugin;
-    private final ColorCodesHandler colorCodesHandler;
 
     public RollCommand(Plugin plugin)
     {
         this.plugin = plugin;
         this.colorCodesHandler = new ColorCodesHandler();
-    }
-
-    public boolean isInteger(String s)
-    {
-        try
-        {
-            Integer.parseInt(s);
-        }
-        catch (NumberFormatException e)
-        {
-            return false;
-        }
-        catch (NullPointerException e)
-        {
-            return false;
-        }
-        return true;
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
