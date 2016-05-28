@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class DataFileHandler
 {
-    private DataFileHandler()	{}
+    private DataFileHandler() {}
     static DataFileHandler dataFileHandler = new DataFileHandler();
 
     public static DataFileHandler getInstance()
@@ -24,19 +24,24 @@ public class DataFileHandler
     public void setup(Plugin plugin)
     {
         try {
-            if (!plugin.getDataFolder().exists()) {
+            if (!plugin.getDataFolder().exists())
+            {
                 plugin.getDataFolder().mkdirs();
             }
             File configFile = new File(plugin.getDataFolder(), "config.yml");
-            if (!configFile.exists()) {
+            if (!configFile.exists())
+            {
                 plugin.getLogger().info("Config.yml not found, creating!");
                 plugin.saveDefaultConfig();
-            } else {
+            }
+            else
+            {
                 plugin.getLogger().info("Config.yml found, loading!");
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
             e.printStackTrace();
-
         }
     }
 }
