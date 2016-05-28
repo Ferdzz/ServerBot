@@ -15,10 +15,12 @@ public class BottleCommand implements CommandExecutor
 {
 
     private List<String> onlinePlayers = new ArrayList<String>();
-    private Random random = new Random();
     private String bottledPlayer;
     private String playerOne;
     private String playerTwo;
+
+    private Random random = new Random();
+    private int index;
 
     private final Plugin plugin;
     private final ColorCodesHandler colorCodesHandler;
@@ -31,7 +33,7 @@ public class BottleCommand implements CommandExecutor
 
     public String getBottledPlayer()
     {
-        int index = random.nextInt(onlinePlayers.size());
+        this.index = random.nextInt(onlinePlayers.size());
         bottledPlayer = onlinePlayers.get(index);
 
         return bottledPlayer;
@@ -53,15 +55,16 @@ public class BottleCommand implements CommandExecutor
         {
             playerOne = getBottledPlayer();
             playerTwo = getBottledPlayer();
+
             while (playerOne == playerTwo)
             {
                 playerTwo = getBottledPlayer();
             }
+
             Bukkit.broadcastMessage(colorCodesHandler.replaceColorCodes(plugin.getConfig().getString("bot-name")) + ChatColor.WHITE
                     + sender.getName() + " spun the bottle and it landed on...." + ChatColor.GREEN + playerOne
                     + ChatColor.WHITE + " and " + ChatColor.GREEN + playerTwo);
         }
-
         return false;
     }
 }
