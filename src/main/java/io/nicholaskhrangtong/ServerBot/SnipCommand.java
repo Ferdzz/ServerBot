@@ -9,10 +9,10 @@ import org.bukkit.plugin.Plugin;
 
 public class SnipCommand implements CommandExecutor
 {
-
-    private final ChatListener chatListener;
     private final Plugin plugin;
+    private final ChatListener chatListener;
     private final ColorCodesHandler colorCodesHandler;
+
     private String messageToCheck;
     private String changedMessage;
 
@@ -28,6 +28,7 @@ public class SnipCommand implements CommandExecutor
         if (sender.hasPermission("serverbot.snip"))
         {
             messageToCheck = chatListener.getMessage();
+
             if (messageToCheck.contains(args[0]))
             {
                 changedMessage = messageToCheck.replaceAll(args[0], args[1]);
@@ -35,7 +36,6 @@ public class SnipCommand implements CommandExecutor
                         + " " + ChatColor.WHITE + "Correction, @" + chatListener.getPlayer().getDisplayName() + " " + changedMessage);
             }
         }
-
         return false;
     }
 }
