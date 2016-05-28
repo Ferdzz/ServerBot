@@ -9,15 +9,17 @@ import org.bukkit.plugin.Plugin;
 
 public class ByeCommand implements CommandExecutor
 {
-    private final String byeLink;
-    private final Plugin plugin;
     private final ColorCodesHandler colorCodesHandler;
+    private final Plugin plugin;
+
+    private final String byeLink;
 
     public ByeCommand(Plugin plugin)
     {
-        this.byeLink = "https://i.ytimg.com/vi/7uOwEQWbmeU/hqdefault.jpg";
         this.plugin = plugin;
         this.colorCodesHandler = new ColorCodesHandler();
+
+        this.byeLink = "https://i.ytimg.com/vi/7uOwEQWbmeU/hqdefault.jpg";
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
