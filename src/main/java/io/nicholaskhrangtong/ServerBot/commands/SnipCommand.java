@@ -1,4 +1,7 @@
-package io.nicholaskhrangtong.ServerBot;
+package io.nicholaskhrangtong.ServerBot.commands;
+
+import io.nicholaskhrangtong.ServerBot.listeners.ChatListener;
+import io.nicholaskhrangtong.ServerBot.controllers.ColorCodesHandler;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

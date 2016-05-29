@@ -1,4 +1,4 @@
-package io.nicholaskhrangtong.ServerBot;
+package io.nicholaskhrangtong.ServerBot.listeners;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

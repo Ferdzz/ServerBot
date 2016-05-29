@@ -1,12 +1,8 @@
-package io.nicholaskhrangtong.ServerBot;
+package io.nicholaskhrangtong.ServerBot.controllers;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;
 
 import java.io.File;
-import java.io.IOException;
 
 public class DataFileHandler
 {

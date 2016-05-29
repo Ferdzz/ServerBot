@@ -4,7 +4,7 @@ version: 1.0.0
 name: ServerBot
 
 commands:
-  bye:
+   bye:
       decription: Usage /bye to get a link to a farewell picture.
    roll:
       description: Usage /roll <upper_bound> to get random number from 0 to your desired number.

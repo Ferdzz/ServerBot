@@ -1,4 +1,4 @@
-package io.nicholaskhrangtong.ServerBot;
+package io.nicholaskhrangtong.ServerBot.controllers;
 
 import org.bukkit.ChatColor;
 

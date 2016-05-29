@@ -1,4 +1,6 @@
-package io.nicholaskhrangtong.ServerBot;
+package io.nicholaskhrangtong.ServerBot.commands;
+
+import io.nicholaskhrangtong.ServerBot.controllers.ColorCodesHandler;
 
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Bukkit;
